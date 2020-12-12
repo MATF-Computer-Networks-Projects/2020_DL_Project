@@ -1,0 +1,29 @@
+body {
+    background-color: #162521;
+    color: #FCF300;
+}
+
+.rooms {
+    background-color:#FCF300;
+    color: #162521;
+    border: 3px solid #162521;
+    padding: 10px 20px;
+}
+
+.rooms:hover{
+    background-color: #162521;
+    color: #FCF300;
+    border: 3px solid #FCF300;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.intro {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
