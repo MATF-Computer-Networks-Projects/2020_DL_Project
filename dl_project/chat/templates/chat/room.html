@@ -27,6 +27,7 @@
             + roomName
             + '/'
         );
+        
 
         chatSocket.onmessage = function(e) {
             const data = JSON.parse(e.data);
@@ -46,9 +47,13 @@
 
         document.querySelector('#chat-message-submit').onclick = function(e) {
             const messageInputDom = document.querySelector('#chat-message-input');
-            const message = messageInputDom.value;
+            const username = "{{username}}";
+            console.log(username);
+            var message = username + ": " +  messageInputDom.value;
+            
             chatSocket.send(JSON.stringify({
-                'message': message
+                'message': message,
+                
             }));
             messageInputDom.value = '';
         };

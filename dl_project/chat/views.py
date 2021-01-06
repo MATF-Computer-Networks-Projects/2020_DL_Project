@@ -59,6 +59,9 @@ def logoutUser(request):
 
 @login_required(login_url='login')
 def room(request, room_name):
+    username = request.user
+    
     return render(request, 'chat/room.html', {
-        'room_name': room_name
+        'room_name': room_name,
+        'username': username
     })
