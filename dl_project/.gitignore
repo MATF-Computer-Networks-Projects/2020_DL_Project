@@ -1,5 +1,6 @@
 db.sqlite3
-__pycache__
+dl_project/__pycache__*
+chat/__pycache__*
 migrations
 tests.py
 admin.py
