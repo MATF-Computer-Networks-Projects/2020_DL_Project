@@ -13,8 +13,13 @@
 <body>
     
     <div class="container">
+        <p>{{request.user}}</p>
+        <a href="{% url 'logout' %}">Log Out</a>
         <div class="intro">
-            <h1>Chat</h1>
+            <h1>Welcome to ReDiscord!</h1>
+            <h6>Choose your room and start chatting with your friends</h6>
+            
+            
             <br>
             <a class="rooms" href="/room1">Room #1</a>
             <a class="rooms" href="/room2">Room #2</a>

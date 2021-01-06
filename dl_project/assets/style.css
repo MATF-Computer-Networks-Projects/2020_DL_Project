@@ -27,3 +27,14 @@ body {
     text-align: center;
 }
 
+.login_btn{
+    color: #162521;
+    background-color: #FCF300;
+    border: 3px solid #FCF300;
+    border-radius: 7px;
+}
+
+.login_btn:hover {
+    background-color: #162521;
+    color: #FCF300;  
+}

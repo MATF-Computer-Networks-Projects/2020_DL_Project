@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | ReDiscord</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+
+
+    <style>
+		.form_container {
+			margin-top: 20px;
+		}
+
+		.input-group-text {
+			background: #162521 !important;
+			color: #FCF300 !important;
+			border: 0 !important;
+			border-radius: 0.25rem 0 0 0.25rem !important;
+		}
+		
+
+	</style>
+</head>
+<body>
+    <div class="intro">
+        <h3>Register</h3>
+        <br><br>
+
+        <form method="POST" action="">
+            {%csrf_token%}
+                
+            <label for="username"> Username: </label>
+                
+            <br>
+            {{form.username}}    
+            <br>
+
+            <label for="email"> E-mail: </label>
+            <br>
+            {{form.email}}
+            <br>
+            
+            <label for="password1"> Password: </label>
+            <br>
+            {{form.password1}}
+            <br>
+            
+            <label for="password2"> Confirm password: </label>
+            <br>
+            {{form.password2}}
+            <br>
+            <br>
+            <input  class="btn login_btn" type="submit" value="Register">
+            <br><br>
+            
+            {{form.errors}}
+
+            <p>Already have an account? <a href="{% url 'login' %}">Login here</a></p>
+        </form>
+    </div>  
+</body>
+</html>
