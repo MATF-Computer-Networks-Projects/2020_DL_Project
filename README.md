@@ -1,5 +1,7 @@
 # ReDiscord
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a1f8c19c31ce4421a8636e828737a226)](https://app.codacy.com/gh/MATF-Computer-Networks-Projects/2020_DL_Project?utm_source=github.com&utm_medium=referral&utm_content=MATF-Computer-Networks-Projects/2020_DL_Project&utm_campaign=Badge_Grade)
+
 ## Opis projekta
 **ReDiscord** je manja verzija Discord aplikacije. Simulira komunikaciju izmedju klijenata u zasebnim sobama sa mogućnostima chat-ovanja i audio poziva korišćenjem jezika **Python** i **Django** frameworka, kao i modula **Channels**.
 
